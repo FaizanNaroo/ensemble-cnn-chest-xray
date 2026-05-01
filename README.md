@@ -1,4 +1,3 @@
-# ensemble-cnn-chest-xray
 # Ensemble Deep Learning for Multi-Class Chest X-Ray Classification
 
 A robust, multi-model PyTorch implementation for detecting Pneumonia and Tuberculosis from chest radiographs. This repository serves as a reproduction and validation of the methodologies proposed by Shahzad et al. (2025).
