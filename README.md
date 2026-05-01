@@ -60,5 +60,5 @@ The soft-voting mechanism averages the softmax confidence scores across all five
 
 To reproduce these results, clone the repository and run the provided Jupyter/Colab notebook.
 ```bash
-git clone [https://github.com/your-username/ensemble-cnn-chest-xray.git](https://github.com/your-username/ensemble-cnn-chest-xray.git)
+git clone https://github.com/FaizanNaroo/ensemble-cnn-chest-xray.git
 cd ensemble-cnn-chest-xray
