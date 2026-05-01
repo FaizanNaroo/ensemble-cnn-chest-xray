@@ -55,7 +55,7 @@ The soft-voting mechanism averages the softmax confidence scores across all five
 <img width="653" height="552" alt="image" src="https://github.com/user-attachments/assets/de7bf9f2-be0d-497a-9b7f-fd04a2f5757d" />
 
 
-## 🛠️ Usage & Reproduction
+##  Usage & Reproduction
 
 To reproduce these results, clone the repository and run the provided Jupyter/Colab notebook.
 ```bash
