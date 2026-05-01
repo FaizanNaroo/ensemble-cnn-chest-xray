@@ -2,7 +2,7 @@
 
 A robust, multi-model PyTorch implementation for detecting Pneumonia and Tuberculosis from chest radiographs. This repository serves as a reproduction and validation of the methodologies proposed by Shahzad et al. (2025).
 
-## 🚀 Project Overview
+##  Project Overview
 
 Pneumonia and Tuberculosis remain critical global health challenges, particularly in resource-constrained environments. While chest X-rays are accessible, interpreting them requires expertise that is not always available. 
 
@@ -13,7 +13,7 @@ This project automates multi-disease classification by implementing a **Soft-Vot
 *   **Tuberculosis F1-Score:** 0.9680 (High sensitivity and precision for critical case detection)
 *   Successfully replicated the robust diagnostic reliability proposed in recent AI healthcare literature.
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 The ensemble aggregates predictions from five state-of-the-art, ImageNet-pretrained backbones:
 1.  DenseNet121
@@ -26,7 +26,7 @@ The ensemble aggregates predictions from five state-of-the-art, ImageNet-pretrai
 The default ImageNet classifiers were replaced with a custom Multi-Layer Perceptron (MLP) featuring rigorous dropout regularization to prevent overfitting on the medical imaging dataset:
 `Linear(in, 512) -> Dropout(0.2) -> ReLU -> Linear(512, 128) -> Dropout(0.2) -> ReLU -> Linear(128, 32) -> Dropout(0.2) -> ReLU -> Linear(32, 3)`
 
-## 📊 Dataset
+##  Dataset
 
 The model was trained on the publicly available [Pneumonia-TB Dataset](https://www.kaggle.com/datasets/shaikhborhanuddin/pneumonia-tb-dataset) from Kaggle.
 
@@ -36,13 +36,13 @@ The model was trained on the publicly available [Pneumonia-TB Dataset](https://w
 *   **Test Set:** 1,284
 *   **Classes:** Normal, Pneumonia, Tuberculosis
 
-## 💻 Tech Stack
+##  Tech Stack
 *   **Framework:** PyTorch, Torchvision
 *   **Data Processing:** Scikit-learn, NumPy, Pandas
 *   **Visualization:** Matplotlib, Seaborn
 *   **Environment:** Google Colab (NVIDIA T4 GPU)
 
-## 📈 Performance & Results
+##  Performance & Results
 
 The soft-voting mechanism averages the softmax confidence scores across all five architectures, yielding highly calibrated predictions. 
 
